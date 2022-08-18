@@ -26,10 +26,7 @@ function Navbar() {
                 <li><span>View</span></li>
             </ul>
             <div className="nav-response" onClick={handleNav}>
-                {!nav ? (<span><HiOutlineMenuAlt4
-                    className='icon' /></span>) : (<span><AiOutlineClose
-                        style={{ color: '#000' }}
-                        className='icon' /></span>)}
+                {!nav ? (<HiOutlineMenuAlt4 className='icon' />) : (<AiOutlineClose style={{ color: '#000' }} className='icon' />)}
             </div>
             <div className={nav ? 'mobile-menu active' : 'mobile-menu'}>
                 <ul className="mobile-nav">
@@ -40,11 +37,11 @@ function Navbar() {
                 </ul>
                 <div className="mobile-menu-bottom">
                     <div className="social-icons">
-                        <span><FaFacebook className='icon' /></span>
-                        <span><FaInstagram className='icon' /></span>
-                        <span><FaTwitter className='icon' /></span>
-                        <span><FaPinterest className='icon' /></span>
-                        <span><FaYoutube className='icon' /></span>
+                        <FaFacebook className='icon' />
+                        <FaInstagram className='icon' />
+                        <FaTwitter className='icon' />
+                        <FaPinterest className='icon' />
+                        <FaYoutube className='icon' />
                     </div>
                 </div>
             </div>

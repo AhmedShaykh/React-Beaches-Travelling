@@ -20,3 +20,57 @@
     top: 0;
     left: 0;
 }
+
+.hero .content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.form {
+    display: flex;
+    background-color: #ffffffcc;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 4px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form input[type=text] {
+    border: transparent;
+    background-color: transparent;
+    width: 400px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 0.5rem;
+}
+
+.form input[type=text]:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 940px) {
+    .form input[type=text] {
+        max-width: 275px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .form input[type=text] {
+        max-width: 220px;
+    }
+
+}
