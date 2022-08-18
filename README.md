@@ -1,1 +1,1 @@
-# React Beaches Travelling Website!
+# React Travel Static Website!

@@ -1,19 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { HiOutlineMenuAlt4 } from 'react-icons/hi';
+import { FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';
+
+import './Navbar.css';
 
 function Navbar() {
+
+    const [nav, setNav] = useState(false);
+    const handleNav = () => setNav(!nav);
+
     return (
-        <div className="navbar">
+        <div className={nav ? 'navbar navbar-bg' : 'navbar'}>
             <div className="logo">
                 <h2>
-                    BEACHES.
+                    <span>
+                        BEACHES.
+                    </span>
                 </h2>
             </div>
             <ul className="nav-menu">
-                <li>Home</li>
-                <li>Destinations</li>
-                <li>Book</li>
-                <li>View</li>
+                <li><span>Home</span></li>
+                <li><span>Destinations</span></li>
+                <li><span>Book</span></li>
+                <li><span>View</span></li>
             </ul>
+            <div className="nav-response" onClick={handleNav}>
+                <span><HiOutlineMenuAlt4 className='icon' /></span>
+            </div>
+            <div className={nav ? 'mobile-menu active' : 'mobile-menu'}>
+                <ul className="mobile-nav">
+                    <li><span>Home</span></li>
+                    <li><span>Destinations</span></li>
+                    <li><span>Book</span></li>
+                    <li><span>View</span></li>
+                </ul>
+                <div className="mobile-menu-bottom">
+                    <div className="social-icons">
+                        <span><FaFacebook className='icon' /></span>
+                        <span><FaInstagram className='icon' /></span>
+                        <span><FaTwitter className='icon' /></span>
+                        <span><FaPinterest className='icon' /></span>
+                        <span><FaYoutube className='icon' /></span>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
