@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
+import { AiOutlineClose } from 'react-icons/ai';
 import { FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 import './Navbar.css';
@@ -11,7 +12,7 @@ function Navbar() {
 
     return (
         <div className={nav ? 'navbar navbar-bg' : 'navbar'}>
-            <div className="logo">
+            <div className={nav ? 'logo dark' : 'logo'}>
                 <h2>
                     <span>
                         BEACHES.
@@ -25,7 +26,10 @@ function Navbar() {
                 <li><span>View</span></li>
             </ul>
             <div className="nav-response" onClick={handleNav}>
-                <span><HiOutlineMenuAlt4 className='icon' /></span>
+                {!nav ? (<span><HiOutlineMenuAlt4
+                    className='icon' /></span>) : (<span><AiOutlineClose
+                        style={{ color: '#000' }}
+                        className='icon' /></span>)}
             </div>
             <div className={nav ? 'mobile-menu active' : 'mobile-menu'}>
                 <ul className="mobile-nav">

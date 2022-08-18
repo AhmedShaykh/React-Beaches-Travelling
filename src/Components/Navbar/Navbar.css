@@ -7,7 +7,7 @@
     padding: 0 1rem;
     z-index: 2;
     position: absolute;
-    /* color: #fffff; */
+    color: #ffff;
 }
 
 .navbar-bg {
@@ -18,6 +18,7 @@
     padding: 1.2rem 1rem;
     margin: 0 1rem;
     border-bottom: 1px solid #ccc;
+    font-weight: bold;
 }
 
 .nav-menu {
@@ -27,6 +28,7 @@
 
 li {
     padding: 0 1rem;
+    font-weight: bold;
 }
 
 span {
@@ -54,6 +56,11 @@ span {
         /* align-items: center; */
         background-color: #f5f5f5;
         transition: 0.3s;
+        color: #000;
+    }
+
+    .dark {
+        color: #000;
     }
 
     .active {
