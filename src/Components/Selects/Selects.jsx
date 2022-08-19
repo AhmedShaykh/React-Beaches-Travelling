@@ -3,7 +3,7 @@ import './Selects.css';
 
 import SelectsImg from '../SelectsImg/SelectsImg';
 
-import KeyWest from '../../Assets/Photos/siblingsinkeywest.jpg';
+import KeyWest from '../../Assets/Photos/siblingskeywest.jpg';
 import EmeraldBay from '../../Assets/Photos/emeraldbay.jpg';
 import BoraBora from '../../Assets/Photos/borabora2.jpg';
 import Barbados from '../../Assets/Photos/barbados.jpg';
