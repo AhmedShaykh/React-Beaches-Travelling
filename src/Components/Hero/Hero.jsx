@@ -1,5 +1,5 @@
 import React from 'react';
-import Video from '../../Assets/Video.mp4';
+import Video from '../../Assets/Videos/Video.mp4';
 import { AiOutlineSearch } from 'react-icons/ai'
 
 import './Hero.css';

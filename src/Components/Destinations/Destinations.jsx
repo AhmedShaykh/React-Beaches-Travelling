@@ -1,11 +1,11 @@
 import React from 'react';
 import './Destinations.css';
 
-import BoraBora from '../../Assets/borabora.jpg';
-import KeyWest from '../../Assets/keywest.jpg';
-import Boating from '../../Assets/boating.jpg';
-import Maldives from '../../Assets/maldives.jpg'
-import Maldives2 from '../../Assets/maldives2.jpg'
+import BoraBora from '../../Assets/Photos/borabora.jpg';
+import KeyWest from '../../Assets/Photos/keywest.jpg';
+import Boating from '../../Assets/Photos/boating.jpg';
+import Maldives from '../../Assets/Photos/maldives.jpg'
+import Maldives2 from '../../Assets/Photos/maldives2.jpg'
 
 function Destinations() {
     return (
