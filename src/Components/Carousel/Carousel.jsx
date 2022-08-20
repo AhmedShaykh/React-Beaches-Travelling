@@ -1,59 +1,52 @@
-import React, { useState } from 'react'
-import './Carousel.css'
-import BtnSlider from './BtnSlider.jsx'
-import dataSlider from './dataSlider.jsx'
+import React from 'react';
+import './Carousel.css';
 
-export default function Slider() {
+import Beach from '../../Assets/Photos/beach.jpg';
+import Beach2 from '../../Assets/Photos/beach2.jpg';
+import Beach3 from '../../Assets/Photos/beach3.jpg';
+import Beach4 from '../../Assets/Photos/beach4.jpg';
+import Beach5 from '../../Assets/Photos/beach5.jpg';
+import Beach6 from '../../Assets/Photos/beach6.jpg';
+import Beach7 from '../../Assets/Photos/beach7.jpg';
+import Beach8 from '../../Assets/Photos/beach8.jpg';
+import Beach9 from '../../Assets/Photos/beach9.jpg';
+import Beach10 from '../../Assets/Photos/beach10.jpg';
 
-    const [slideIndex, setSlideIndex] = useState(1)
-
-    const nextSlide = () => {
-        if (slideIndex !== dataSlider.length) {
-            setSlideIndex(slideIndex + 1)
-        }
-        else if (slideIndex === dataSlider.length) {
-            setSlideIndex(1)
-        }
-    }
-
-    const prevSlide = () => {
-        if (slideIndex !== 1) {
-            setSlideIndex(slideIndex - 1)
-        }
-        else if (slideIndex === 1) {
-            setSlideIndex(dataSlider.length)
-        }
-    }
-
-    const moveDot = index => {
-        setSlideIndex(index)
-    }
-
+function Carousel() {
     return (
-        <div className="container-slider">
-            {dataSlider.map((obj, index) => {
-                return (
-                    <div
-                        key={obj.id}
-                        className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
-                    >
-                        <img
-                            src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`}
-                        />
-                    </div>
-                )
-            })}
-            <BtnSlider moveSlide={nextSlide} direction={"next"} />
-            <BtnSlider moveSlide={prevSlide} direction={"prev"} />
-
-            <div className="container-dots">
-                {Array.from({ length: 5 }).map((item, index) => (
-                    <div
-                        onClick={() => moveDot(index + 1)}
-                        className={slideIndex === index + 1 ? "dot active" : "dot"}
-                    ></div>
-                ))}
+        <div className='container'>
+            <div>
+                <img src={Beach} alt='/' />
+            </div>
+            <div>
+                <img src={Beach2} alt='/' />
+            </div>
+            <div>
+                <img src={Beach3} alt='/' />
+            </div>
+            <div>
+                <img src={Beach4} alt='/' />
+            </div>
+            <div>
+                <img src={Beach5} alt='/' />
+            </div>
+            <div>
+                <img src={Beach6} alt='/' />
+            </div>
+            <div>
+                <img src={Beach7} alt='/' />
+            </div>
+            <div>
+                <img src={Beach8} alt='/' />
+            </div>
+            <div>
+                <img src={Beach9} alt='/' />
+            </div>
+            <div>
+                <img src={Beach10} alt='/' />
             </div>
         </div>
     )
 }
+
+export default Carousel;
