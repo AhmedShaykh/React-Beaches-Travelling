@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from './Components/Carousel/ImgCarousel';
 import Destinations from './Components/Destinations/Destinations';
 import Hero from './Components/Hero/Hero';
 import Navbar from './Components/Navbar/Navbar';
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Destinations />
       <Selects />
+      <Carousel />
     </>
   );
 }
