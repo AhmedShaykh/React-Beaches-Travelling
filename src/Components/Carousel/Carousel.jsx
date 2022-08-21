@@ -13,6 +13,7 @@ import Beach9 from '../../Assets/Photos/beach9.jpg';
 import Beach10 from '../../Assets/Photos/beach10.jpg';
 
 function Carousel() {
+
     return (
         <div className='container'>
             <div>
