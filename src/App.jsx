@@ -1,9 +1,10 @@
 import React from 'react';
-import Carousel from './Components/Carousel/Carousel';
-import Destinations from './Components/Destinations/Destinations';
-import Hero from './Components/Hero/Hero';
 import Navbar from './Components/Navbar/Navbar';
+import Hero from './Components/Hero/Hero';
+import Destinations from './Components/Destinations/Destinations';
 import Selects from './Components/Selects/Selects';
+import ImgCarousel from './Components/Carousel/ImgCarousel';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Hero />
       <Destinations />
       <Selects />
-      <Carousel />
+      <ImgCarousel />
+      <Footer />
     </>
   );
 }
