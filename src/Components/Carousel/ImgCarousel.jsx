@@ -5,26 +5,26 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import Beach from '../../Assets/Photos/beach.jpg';
-// import Beach2 from '../../Assets/Photos/beach2.jpg';
-// import Beach3 from '../../Assets/Photos/beach3.jpg';
-// import Beach4 from '../../Assets/Photos/beach4.jpg';
-// import Beach5 from '../../Assets/Photos/beach5.jpg';
-// import Beach6 from '../../Assets/Photos/beach6.jpg';
-// import Beach7 from '../../Assets/Photos/beach7.jpg';
-// import Beach8 from '../../Assets/Photos/beach8.jpg';
+import Beach2 from '../../Assets/Photos/beach2.jpg';
+import Beach3 from '../../Assets/Photos/beach3.jpg';
+import Beach4 from '../../Assets/Photos/beach4.jpg';
+import Beach5 from '../../Assets/Photos/beach5.jpg';
+import Beach6 from '../../Assets/Photos/beach6.jpg';
+import Beach7 from '../../Assets/Photos/beach7.jpg';
+import Beach8 from '../../Assets/Photos/beach8.jpg';
 import Beach9 from '../../Assets/Photos/beach9.jpg';
 import Beach10 from '../../Assets/Photos/beach10.jpg';
 
 function ImgCarousel() {
 
     return (
-        <div className='container' style={{ paddingTop: '2rem'}}>
+        <div name="view" className='container' style={{ paddingTop: '2rem' }}>
             <Carousel className='carousel' showArrows={true} autoPlay infiniteLoop={true} >
                 <div>
                     <img src={Beach} alt='/' />
                 </div>
-                {/* <div> */}
-                    {/* <img src={Beach2} alt='/' />
+                <div>
+                    <img src={Beach2} alt='/' />
                 </div>
                 <div>
                     <img src={Beach3} alt='/' />
@@ -43,7 +43,7 @@ function ImgCarousel() {
                 </div>
                 <div>
                     <img src={Beach8} alt='/' />
-                </div> */}
+                </div>
                 <div>
                     <img src={Beach9} alt='/' />
                 </div>

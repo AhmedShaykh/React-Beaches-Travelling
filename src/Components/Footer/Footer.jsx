@@ -37,7 +37,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className='center'>
-                    <h3>
+                    <h3 style={{ color: "#fff" }}>
                         Copyright © 2022 By BEACHES.
                     </h3>
                 </div>
