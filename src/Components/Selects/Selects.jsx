@@ -15,7 +15,7 @@ import Gernada from '../../Assets/Photos/gernada.jpg';
 
 function Selects() {
     return (
-        <div className='selects'>
+        <div name="book" className='selects'>
             <div className="container">
                 <SelectsImg bgImg={KeyWest} text='Key West' />
                 <SelectsImg bgImg={Bali} text='Bali' />

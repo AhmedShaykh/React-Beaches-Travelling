@@ -9,7 +9,7 @@ import Maldives2 from '../../Assets/Photos/maldives2.jpg'
 
 function Destinations() {
     return (
-        <div className='destinations'>
+        <div name="destinations" className='destinations'>
             <div className="container">
                 <h1>All-Inclusive Resorts</h1>
                 <p>On the Caribbean's Best Beaches</p>

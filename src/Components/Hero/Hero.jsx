@@ -1,12 +1,12 @@
 import React from 'react';
-import Video from '../../Assets/Videos/Video.mp4';
+import Video from '../../Assets/Video/BeachGirl.mp4';
 import { AiOutlineSearch } from 'react-icons/ai'
 
 import './Hero.css';
 
 function Hero() {
     return (
-        <div className="hero">
+        <div name="home" className="hero">
             <video autoPlay loop muted id='video'>
                 <source src={Video} type='video/mp4' />
             </video>
