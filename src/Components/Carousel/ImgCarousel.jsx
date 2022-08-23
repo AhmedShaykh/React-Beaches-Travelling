@@ -18,7 +18,7 @@ import Beach10 from '../../Assets/Photos/beach10.jpg';
 function ImgCarousel() {
 
     return (
-        <div name="view" className='container' style={{ paddingTop: '2rem' }}>
+        <div name="view" className='container'>
             <Carousel className='carousel' showArrows={true} autoPlay infiniteLoop={true} >
                 <div>
                     <img src={Beach} alt='/' />

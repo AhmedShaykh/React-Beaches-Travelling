@@ -1,7 +1,10 @@
+.container {
+    padding-top: 1.5rem;
+}
+
 .carousel {
     padding: 2rem 0;
 }
-
 
 .carousel img {
     height: 90vh;
@@ -15,4 +18,10 @@
 
 .control-dots {
     display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding-top: 1rem;
+    }
 }
