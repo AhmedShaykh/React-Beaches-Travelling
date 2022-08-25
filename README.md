@@ -1,3 +1,3 @@
 # React Travel Static Website!
 
-https://react-beaches-travel.surge.sh/
+https://react-travel-website-pi.vercel.app/
